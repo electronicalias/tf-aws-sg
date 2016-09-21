@@ -1,6 +1,6 @@
 resource "aws_security_group" "mod" {
   name = "${var.sg_name}"
-  description = "${var.description}"
+  description = "${var.sg_description}"
 
   ingress {
       from_port = 0
