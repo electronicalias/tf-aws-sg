@@ -1,2 +1,2 @@
 variable "sg_name" {}
-variable "escription" {}
+variable "description" {}
