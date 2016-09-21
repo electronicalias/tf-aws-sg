@@ -1,4 +1,4 @@
-resource "aws_security_group" "${var.sg_name}" {
+resource "aws_security_group" "mod" {
   name = "${var.sg_name}"
   description = "${var.description}"
 
