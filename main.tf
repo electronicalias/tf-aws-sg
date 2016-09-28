@@ -1,7 +1,8 @@
 resource "aws_security_group" "mod" {
   name = "${var.sg_name}"
   description = "${var.sg_description}"
-
+  vpc_id = "${vpc.env.id}"
+  
   ingress {
       from_port = 0
       to_port = 65535
