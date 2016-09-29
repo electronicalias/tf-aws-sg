@@ -1,7 +1,7 @@
 resource "aws_security_group" "mod" {
   name = "${var.sg_name}"
   description = "${var.sg_description}"
-  vpc_id = "${module.aws_vpc.mod.id}"
+  vpc_id = "${module.vpc.vpc_id}"
   
   ingress {
       from_port = 0
